@@ -6,9 +6,13 @@ public class MetodoMain {
 
 	public static void main(String[] args) {
 		
-		//Declaro variable para llamar a funcion
-		int numeroIntroducido;
-
+		
+		int numeroIntroducido;//Declaro variable para llamar a funcion esPrimo
+		
+		
+		int numeroIntroducido2;//Declaro variable para llamar a funcion esCapicua
+		//hace falta segunda variable?????
+		
 		//Creo escaner
 		Scanner dogma = new Scanner(System.in);
 		
@@ -24,8 +28,13 @@ public class MetodoMain {
 		//Imprimo mensaje con el objeto "funciones" que llamara a las funciones que esten dentro de la clase "Numeros"
 		//En este caso le indico que solo llame a una funcion de las dos que hay en la clase, a "esPrimo"
 		//Añado un ternario para mejor presentacion
-		System.out.println(funciones.esPrimo(numeroIntroducido) ? "El numero es primo" : "El numero no es primo");
+		System.out.println(funciones.esPrimo(numeroIntroducido) ? "El numero es primo." : "El numero no es primo.");
 
+		System.out.println("Introduzca un numero entero positivo para comprobar si es capicua: ");
+		
+		numeroIntroducido2 = dogma.nextInt();
+		
+		System.out.println(funciones.esCapicua(numeroIntroducido2) ? "El numero es capicua." : "El numero no es capicua.");
 		
 		dogma.close();
 	}
