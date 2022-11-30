@@ -6,7 +6,7 @@ public class MetodoMain {
 
 	public static void main(String[] args) {
 		
-		//Creo objeto para llamar a funcion operacion y lo nombro funciones
+		//Creo objeto para llamar a funcion Operaciones y lo nombro funciones
 		Operaciones funciones = new Operaciones();
 		
 		Scanner dogma= new Scanner(System.in);
@@ -18,7 +18,7 @@ public class MetodoMain {
 		
 		System.out.println("Introduzca valor para variable numero2: ");
 		
-		//Para dar valor a variable global dentro de una clase usar objeto para llamar a clase y dar valor con escaner o a mano
+		//Para dar valor a variable global dentro de una clase no estatica usar objeto para llamar a clase y dar valor con escaner o a mano
 		funciones.numero2=dogma.nextDouble();
 		
 		//Para llamar a funcion dentro de clase usar objeto para llamar a clase y luego especificar funcion dentro de la misma
