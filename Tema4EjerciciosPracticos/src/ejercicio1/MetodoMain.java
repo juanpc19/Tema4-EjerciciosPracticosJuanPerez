@@ -7,11 +7,7 @@ public class MetodoMain {
 	public static void main(String[] args) {
 		
 		
-		int numeroIntroducido;//Declaro variable para llamar a funcion esPrimo
-		
-		
-		int numeroIntroducido2;//Declaro variable para llamar a funcion esCapicua
-		//hace falta segunda variable?????
+		int numeroIntroducido;//Declaro variable que dar a funciones
 		
 		//Creo escaner
 		Scanner dogma = new Scanner(System.in);
@@ -32,9 +28,9 @@ public class MetodoMain {
 
 		System.out.println("Introduzca un numero entero positivo para comprobar si es capicua: ");
 		
-		numeroIntroducido2 = dogma.nextInt();
+		numeroIntroducido = dogma.nextInt();
 		
-		System.out.println(funciones.esCapicua(numeroIntroducido2) ? "El numero es capicua." : "El numero no es capicua.");
+		System.out.println(funciones.esCapicua(numeroIntroducido) ? "El numero es capicua." : "El numero no es capicua.");
 		
 		dogma.close();
 	}

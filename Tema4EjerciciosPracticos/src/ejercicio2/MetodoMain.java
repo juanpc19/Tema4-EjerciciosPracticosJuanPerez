@@ -8,25 +8,21 @@ public class MetodoMain {
 		
 		double radio;
 		
-		double radio2; //hace falta segunda variable?????
-		
 		Scanner dogma = new Scanner(System.in);
-		
-		Esfera funciones = new Esfera();
 		
 		System.out.println("Introduzca el radio para calcular la superficie: ");
 		
 		radio = dogma.nextDouble();
 		
-		System.out.println(funciones.Superficie(radio));
+		System.out.println(Esfera.Superficie(radio));
 		
 		System.out.println("Introduzca el radio para calcular el Volumen: ");
 		
-		radio2 = dogma.nextDouble();
+		radio = dogma.nextDouble();
 		
-		System.out.println(funciones.Volumen(radio));
+		System.out.println(Esfera.Volumen(radio));
 		
-		
+		dogma.close();
 
 	}
 

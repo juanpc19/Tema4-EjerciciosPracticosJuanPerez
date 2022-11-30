@@ -4,7 +4,8 @@ public class Esfera {
 	
 	static double radio;
 	
-	static double Superficie (radio) {
+	static double Superficie (double numero) {
+		radio = numero;
 		double superficie;
 		
 		superficie = 4*Math.PI*Math.pow(radio, 2);
@@ -12,10 +13,11 @@ public class Esfera {
 		return (superficie);
 	}
 	
-	static double Volumen (radio) {
+	static double Volumen (double numero) {
+		radio = numero;
 		double volumen;
 		
-		Volumen = (4*Math.PI/3)*Math.pow(radio, 3);
+		volumen = (4*Math.PI/3)*Math.pow(radio, 3);
 		
 		return (volumen);
 	}
