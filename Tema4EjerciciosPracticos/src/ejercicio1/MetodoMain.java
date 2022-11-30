@@ -9,11 +9,11 @@ public class MetodoMain {
 		
 		int numeroIntroducido;//Declaro variable que dar a funciones
 		
-		//Creo escaner
-		Scanner dogma = new Scanner(System.in);
-		
 		//Creo objeto (funciones) con el que llamar a las funciones que esten dentro de la clase (Numeros) que contiene las funciones 
 		Numeros funciones = new Numeros();
+		
+		//Creo escaner
+		Scanner dogma = new Scanner(System.in);
 		
 		//Solicito valor para variable
 		System.out.println("Introduzca un numero entero positivo mayor a 1: ");
