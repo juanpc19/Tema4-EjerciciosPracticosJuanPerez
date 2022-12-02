@@ -32,12 +32,36 @@ public class FuncionesRecursivas {
 		double resultado=0;
 		
 		if (n==0) {
-			resultado=1;
+			resultado=0; //Este estaria bien que devolviera resultado=1 si n=0
 		} else {
-		resultado=a+potencia(n-1);	//probar cast
+			
+			resultado=a+potencia(a+(2*a),n-1);	
 			
 		}
 		return (resultado);
 	}
 
+	/*static int serieFibonacci (int numero) {
+		
+		int fibonacci1=0;
+		int fibonacci2=1;
+		int auxiliar=0;
+		
+		
+		if (numero==auxiliar) {
+			System.out.print(" " + fibonacci1);
+			
+		} else {
+			System.out.print(fibonacci2+serieFibonacci());
+			
+			
+			while (numero > 2) {
+				aux = fibonacci1;
+				fibonacci1 = fibonacci2;
+				fibonacci2 = aux + fibonacci2;
+				System.out.print(" " + fibonacci2);
+				numero--;
+		}
+		*/
+	
 }

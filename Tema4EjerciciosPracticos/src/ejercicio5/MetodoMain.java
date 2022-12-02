@@ -27,7 +27,15 @@ public class MetodoMain {
 		
 		System.out.println("Introduzca un numero que sera la exponente :");
 		
-		n =  dogma.nextInt();
+		numeroIntroducido =  dogma.nextInt();
+		
+		System.out.println("La potencia del numero introducido es: " + FuncionesRecursivas.potencia(a,numeroIntroducido));
+		
+		System.out.println("Introduzca un numero entero :");
+		
+		numeroIntroducido=dogma.nextInt();
+
+		//System.out.println("La secuencia Fibonacci hasta ese numero es: " + FuncionesRecursivas.serieFibonacci(numeroIntroducido));
 		
 		dogma.close();
 	}
