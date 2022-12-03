@@ -29,13 +29,15 @@ public class FuncionesRecursivas {
 	
 	static double potencia (double a, int n) {
 		
+		//crear otra variable?
 		double resultado=0;
 		
-		if (n==0) {
-			resultado=0; //Este estaria bien que devolviera resultado=1 si n=0
-		} else {
+		if (n==1) {
+			resultado=0; 
+			} else {
+				
+			resultado=a+potencia(a*a,n-1);	
 			
-			resultado=a+potencia(a+(2*a),n-1);	
 			
 		}
 		return (resultado);
