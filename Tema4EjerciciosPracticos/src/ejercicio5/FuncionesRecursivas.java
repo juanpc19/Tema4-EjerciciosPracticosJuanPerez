@@ -35,6 +35,7 @@ public class FuncionesRecursivas {
 		if (n==1) {
 			resultado=0; 
 			} else {
+			
 				
 			resultado=a+potencia(a*a,n-1);	
 			
