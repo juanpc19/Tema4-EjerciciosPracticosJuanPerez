@@ -32,18 +32,23 @@ public class FuncionesRecursivas {
 		//crear otra variable?
 		double resultado=0;
 		
-		if (n==1) {
-			resultado=0; 
-			} else {
+		if (n==0) {
+			resultado=1; 
 			
-				
-			resultado=a+potencia(a*a,n-1);	
+			}  else {
+		
+			resultado=a*potencia(a,n-1);	
 			
 			
 		}
 		return (resultado);
 	}
 
+	/*if posi<=1
+			resltado 1
+			else
+			resultado fibo (posi -1) fibo (posi -02)*/
+	
 	/*static int serieFibonacci (int numero) {
 		
 		int fibonacci1=0;
