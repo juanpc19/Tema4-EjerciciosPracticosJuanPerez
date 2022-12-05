@@ -2,37 +2,44 @@ package ejercicio4;
 
 import java.util.Scanner;
 
+//Clase MetodoMain para probar la clase Operaciones
 public class MetodoMain {
 
 	public static void main(String[] args) {
 		
-		//Creo objeto para llamar a funcion Operaciones y lo nombro funciones
+		//Creo objeto (funciones) con el que llamar a las funciones que esten dentro de la clase (Operaciones)
 		Operaciones funciones = new Operaciones();
 		
+		//Creo escaner lo nombro dogma y lo importo
 		Scanner dogma= new Scanner(System.in);
 		
+		//Solicito valor para variable mediante mensaje por pantalla
 		System.out.println("Introduzca valor para variable numero1: ");
 		
-		//Para dar valor a variable global dentro de una clase no estatica usar objeto para llamar a clase y dar valor con escaner o a mano
+		//Doy valor a variable no estatica global (numero1) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
+		//y le doy valor con escaner 
 		funciones.numero1=dogma.nextDouble();
 		
+		//Solicito valor para variable mediante mensaje por pantalla
 		System.out.println("Introduzca valor para variable numero2: ");
 		
-		//Para dar valor a variable global dentro de una clase no estatica usar objeto para llamar a clase y dar valor con escaner o a mano
+		//Doy valor a variable no estatica global (numero2) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
+		//y le doy valor con escaner 
 		funciones.numero2=dogma.nextDouble();
 		
-		//Para llamar a funcion dentro de clase usar objeto para llamar a clase y luego especificar funcion dentro de la misma
+		//Llamo a funcion (sumar) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
 		System.out.println(("El resultado de la suma de esas dos variables es: " + funciones.sumar()));
 		
-		//Para llamar a funcion dentro de clase usar objeto para llamar a clase y luego especificar funcion dentro de la misma
+		//Llamo a funcion (restar) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
 		System.out.println(("El resultado de la resta de esas dos variables es: " + funciones.restar()));
 		
-		//Para llamar a funcion dentro de clase usar objeto para llamar a clase y luego especificar funcion dentro de la misma
+		//Llamo a funcion (multiplicar) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
 		System.out.println(("El resultado de la multiplicacion de esas dos variables es: " + funciones.multiplicar()));
 		
-		//Para llamar a funcion dentro de clase usar objeto para llamar a clase y luego especificar funcion dentro de la misma
+		//Llamo a funcion (dividir) que esta dentro de una clase usando objeto (funciones) para llamar a su clase (Operaciones) 
 		System.out.println(("El resultado de la division de esas dos variables es: " + funciones.dividir()));
 		
+		//Cierro escaner
 		dogma.close();
 
 	}
