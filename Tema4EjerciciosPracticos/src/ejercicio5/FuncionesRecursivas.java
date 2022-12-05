@@ -43,11 +43,6 @@ public class FuncionesRecursivas {
 		}
 		return (resultado);
 	}
-
-	/*if posi<=1
-			resultado 1
-			else
-			resultado fibo (posi -1) fibo (posi -2)*/
 	
 	static int serieFibonacci (int numero) {
 		
@@ -59,9 +54,7 @@ public class FuncionesRecursivas {
 			resultado=1;
 			
 		} else {
-			
-	
-			
+		
 			resultado=serieFibonacci(numero-1) + serieFibonacci(numero-2);
 			
 		}
