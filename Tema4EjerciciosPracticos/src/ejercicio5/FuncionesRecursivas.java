@@ -45,31 +45,27 @@ public class FuncionesRecursivas {
 	}
 
 	/*if posi<=1
-			resltado 1
+			resultado 1
 			else
-			resultado fibo (posi -1) fibo (posi -02)*/
+			resultado fibo (posi -1) fibo (posi -2)*/
 	
-	/*static int serieFibonacci (int numero) {
+	static int serieFibonacci (int numero) {
 		
-		int fibonacci1=0;
-		int fibonacci2=1;
-		int auxiliar=0;
+		int resultado=0;
 		
 		
-		if (numero==auxiliar) {
-			System.out.print(" " + fibonacci1);
+		
+		if (numero<=1) {
+			resultado=1;
 			
 		} else {
-			System.out.print(fibonacci2+serieFibonacci());
 			
+	
 			
-			while (numero > 2) {
-				aux = fibonacci1;
-				fibonacci1 = fibonacci2;
-				fibonacci2 = aux + fibonacci2;
-				System.out.print(" " + fibonacci2);
-				numero--;
+			resultado=serieFibonacci(numero-1) + serieFibonacci(numero-2);
+			
 		}
-		*/
+		return (resultado);
+	}
 	
 }

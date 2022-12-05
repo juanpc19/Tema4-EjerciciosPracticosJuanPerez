@@ -35,7 +35,7 @@ public class MetodoMain {
 		
 		numeroIntroducido=dogma.nextInt();
 
-		//System.out.println("La secuencia Fibonacci hasta ese numero es: " + FuncionesRecursivas.serieFibonacci(numeroIntroducido));
+		System.out.println("La secuencia Fibonacci hasta ese numero es: " + FuncionesRecursivas.serieFibonacci(numeroIntroducido));
 		
 		dogma.close();
 	}
