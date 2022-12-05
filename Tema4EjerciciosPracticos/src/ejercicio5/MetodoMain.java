@@ -10,8 +10,6 @@ public class MetodoMain {
 		
 		double a;
 		
-		int n;
-		
 		Scanner dogma = new Scanner(System.in);
 		
 		System.out.println("Introduzca un numero entero :");
